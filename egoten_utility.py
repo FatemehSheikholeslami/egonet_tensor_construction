@@ -9,12 +9,7 @@ try:
     import numpy as np
     import scipy as sp
     import networkx as nx
-#    import timeit
-#    import os 
-#    import sys
-#    import re
     import commands
-#    import convert
     import multiprocessing
     from multiprocessing import Queue, Manager, Pool
 
@@ -70,7 +65,6 @@ def make_ego_tensor_undirected (G,output_file,nworker):
 
 def make_ego_tensor_directed (G,output_file,nworker):
 
-  #open(output_file, 'w')
   cnt=1
   map_dict=dict()
   map_tensor2node = np.zeros(len(G.nodes()))
