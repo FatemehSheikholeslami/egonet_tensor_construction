@@ -41,15 +41,6 @@ def make_egoten(input_adj,directed_flag,nworker,ordered,outputfile):
   return
 
 
-  
-  
-#def fix_adj (input_adj):
-#  cmd = 'python main_fix.py '+ input_adj 
-#  (status,output) =   commands.getstatusoutput(cmd)
-#  if status:
-#    print 'Error in ordering network adjacency'
-#    print output
-#  return 'ordered_'+input_adj    
 
 
 
@@ -96,7 +87,7 @@ if __name__=='__main__':
     print '****Usage error: Must set whether the edgelist is ordered or not (if there is gap in oroginal node numbering). See help.****'
   else:
     make_egoten(args.input, args.directed , args.workers,args.ordered,args.output)
-  # make_egoten(input_adj,directed_flag,nworker,verbose,ordered,output):  
+  # make_egoten(input_adj,directed_flag,nworker,ordered,output):  
 
 
 
