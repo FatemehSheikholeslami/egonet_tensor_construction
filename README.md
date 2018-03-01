@@ -27,9 +27,10 @@ For instance, to execute, run:
 
 **** OUTPUT FILES
 
-The output file is "egonet_tensor.txt" where each line is the the index of non-zero entries followed by its value (1 as default as in binary networks).
+The output file is "egonet_tensor.txt" where each line corresponds to a non-zero entry of the egonet tensor, given by its indices followed by its value of 1 (as default as in binary networks).
 
 Additionally, if "unordered" is set, then the file "node_mapping.txt" will be produced where each line gives the mapping from the "original" to the "ordered" id of nodes.   
+"ordered_edgelist.txt" will also be procides in this case.
 
 
 
