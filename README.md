@@ -11,9 +11,11 @@ This script makes a text file corresponding to the sparse "egonet tensor represe
 
 
 	--input                 (dataset_adj.txt) is the edgeset dataset with a pair of nodes in each line separated by comma ',' (default facebook_adj.txt)
-	--output                is the output file where each lien is the node s assigned to a detected community (default )
-	--directed		use  if edgelist is directed
-	--undirected 		use of edgelist is undirected
+	--output                the output sparse tensor corresponding to the sparse egonet tensor.(default=egonet_tensor.txt)
+	--directed		use if edgelist is directed
+	--undirected 		use if edgelist is undirected (default)
+	--ordered		use if node indexing in the edgelist starts from 1 and there is no gap in node ids. (default)
+	--unordered		use if node ids in the edgelist do not start form 1, or if there is a gap in indexing. 
 	--workers		number of workers (set 1 as default)
         
      
