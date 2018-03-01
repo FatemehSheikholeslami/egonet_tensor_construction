@@ -25,7 +25,7 @@ If the node indexing in the edgelist is not ordered, e.g. there is gap between n
 For instance, to execute, run:
 	python  build_egoten.py --input facebook_adj.edges --undirected --workers 4 --ordered
 
-%%%% OUTPUT FILES
+**** OUTPUT FILES
 
 The output file is "egonet_tensor.txt" where each line is the the index of non-zero entries followed by its value (1 as default as in binary networks).
 
